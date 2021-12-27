@@ -1,0 +1,16 @@
+:root {
+  --lightBlue-color: #e8f5fe;
+  --twitter-blue-color: #50b7f5;
+  --twitter-bg: #e6ecf0;
+  --white-color: #fff;
+  --gray-color: #808080;
+  --halfGray-color: #f8f8f8;
+}
+
+.app__body {
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}

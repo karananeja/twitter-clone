@@ -1,0 +1,52 @@
+.feed {
+  flex: 0.3;
+  flex-grow: 1;
+  border-right: 1px solid var(--twitter-bg);
+  min-width: fit-content;
+  overflow-y: scroll;
+}
+
+.feed::-webkit-scrollbar {
+  display: none;
+}
+
+.feed {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.feed__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--white-color);
+  padding: 15px 20px;
+}
+
+.feed__header > h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.feed__icon {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+}
+
+.feed__icon > .MuiSvgIcon-root {
+  color: var(--twitter-blue-color);
+  margin-left: 8px;
+  transform: rotate(180deg);
+}
+
+.feed__icon:hover {
+  background-color: var(--twitter-bg);
+  border-radius: 30px;
+  transition: background-color 0.1s ease-out;
+}
